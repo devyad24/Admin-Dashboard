@@ -23,16 +23,17 @@ header{
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+    background-color:#ffd7ba ;
 }
 aside{
     grid-column: 1/2;
     grid-row: 1/3;
     padding-top: 1.8rem;
     padding-left: 1.4rem;
-    background-color: #22d3ee;
+    background-color:#fec89a;
 }
 main{
-    border: 1px solid black;
+    padding: 25px 20px 35px 15px;
 }
 .aside-container{
     height: 20%;
@@ -104,7 +105,7 @@ main{
     width: 60%;
     height: 3vh;
     outline: none !important;
-    border: 1px solid #0077b6;
+    border: 3px solid #b08968;
     border-radius: 20px;
 
 }
@@ -121,7 +122,7 @@ main{
     grid-template-columns: 1fr 5fr;
     align-items: center;
     font-size: 1.3rem;
-    color: #f0f9ff;
+    color: #582f0e;
     font-weight: 700;
 }
 .dashboard{
@@ -129,7 +130,7 @@ main{
     grid-template-columns: 1fr 5fr;
     align-items: center;
     font-size: 1.8rem;
-    color: #f0f9ff;
+    color: #582f0e;
     font-weight: 700;
 }
 .dashboard>img{
@@ -159,6 +160,54 @@ main{
     font-weight: 700;
     outline: none;
     border: none;
-    background-color: #22d3ee;
+    background-color: #e29578;
     border-radius: 1.5rem;
+}
+.main-container{
+    height:100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+.center-content{
+    display: grid;
+    grid-template-rows: 0.5fr 8fr;
+}
+.cards{
+    border:1px solid blueviolet;
+}
+.center-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 1.8rem;
+}
+.center-grid>div{
+    height: 25vh;
+    border: 1px solid darkorange;
+}
+.center-content>p{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.center-grid>div{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding: 10px 25px;
+    justify-content: center;
+    row-gap: 1.5rem;
+    background-color: #fec89a;
+}
+.grid-text{
+    grid-column: 1/5;
+    place-self: center;
+}
+.grid-text>p:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #8a5a44;
+}
+.grid-text>p:last-of-type{
+    font-size: 1rem;
+    color: #b07d62;
 }
