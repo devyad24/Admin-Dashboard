@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +35,8 @@ aside{
 }
 main{
     padding: 25px 20px 35px 15px;
+    background-color: #edc4b3;
+    box-shadow: 0 -3px 8px #c9ada7;
 }
 .aside-container{
     height: 20%;
@@ -166,24 +169,23 @@ main{
 .main-container{
     height:100%;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 1rem;
 }
 .center-content{
     display: grid;
     grid-template-rows: 0.5fr 8fr;
 }
-.cards{
-    border:1px solid blueviolet;
-}
 .center-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     gap: 1.8rem;
+    height: 80%;
 }
 .center-grid>div{
     height: 25vh;
-    border: 1px solid darkorange;
+    border-radius: 20px;
+    border-left: 10px solid #582f0e;
 }
 .center-content>p{
     font-size: 1.3rem;
@@ -197,6 +199,7 @@ main{
     justify-content: center;
     row-gap: 1.5rem;
     background-color: #fec89a;
+    box-shadow: 2px 2px 5px #c9ada7;
 }
 .grid-text{
     grid-column: 1/5;
@@ -206,8 +209,75 @@ main{
     font-size: 1.1rem;
     font-weight: 700;
     color: #8a5a44;
+    margin-bottom: 2px;
 }
 .grid-text>p:last-of-type{
     font-size: 1rem;
-    color: #b07d62;
+    color: #9d6b53;
+}
+.cards{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 1rem;
+}
+.card1-content{
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background-color: #fec89a;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px #c9ada7;
+}
+.card-1>p,.card-2>p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card1-content>div>p:first-of-type{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.card1-content>div:not(div:last-of-type){
+    border-bottom: 1px solid #b08968;
+}
+.card1-content>div{
+    padding: 1.5rem 0 1.5rem 0;
+}
+.card2-content{
+    padding: 2rem;
+    background-color: #fec89a;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px #c9ada7;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+}
+.card2-content img{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    grid-row: 1/3;
+}
+.card2-content>div{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 10px;
+}
+.card2-content>div>p:first-of-type{
+    font-weight: 700;
+    color: #8a5a44;
+}
+.card2-content>div>p:last-of-type{
+    color: #9d6b53;
+}
+header button:hover{
+    background-color: #9d6b53;
+}
+.card1-content>div>p:first-of-type{
+    color: #8a5a44;
+}
+.card1-content>div>p:last-of-type{
+    color:#9d6b53;
 }
